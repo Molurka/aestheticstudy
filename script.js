@@ -172,6 +172,8 @@ function CountDown(m, s){
     
 
         if( s <= 0 && m <= 0){
+             var audio = new Audio('short-success-sound-glockenspiel-treasure-video-game-6346.mp3');
+            audio.play();
             functionIsRunning = false;
             pomodoro_button.classList.remove('clicked');
             short_break_button.classList.remove('clicked');
